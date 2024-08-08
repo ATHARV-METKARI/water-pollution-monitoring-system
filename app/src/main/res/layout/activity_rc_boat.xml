@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    android:scrollbarSize="?android:attr/scrollbarSize"
+    tools:context=".RC_Boat_Activity">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="408dp"
+        android:layout_height="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4">
+
+        <Button
+            android:id="@+id/boat_back_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="BACK"
+            app:cornerRadius="26dp"
+            app:icon="@drawable/back_img"
+            app:iconPadding="8dp"
+            app:iconSize="18dp" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Project Demostration"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="415dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+        android:rotation="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="415dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:lineSpacingExtra="4sp"
+            android:paddingLeft="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="2dp"
+            android:text="Nowadays there is an ever-increasing strain regarding the provision of clean, consumable water. This problem especially arises in rural areas due to the ineffectiveness of the governments and the increasing population in the country. Therefore, this particular project aims to detect and display real-time physicochemical quality of the water in a much more cost-effective manner, as opposed to the current methods which involve sampling and laboratory methods, through its wireless, multi-sensor network.   It takes into consideration multiple factors and presents this real-time quality through the display of its electrical conductivity, pH, total dissolved solids TDS, turbidity, as well as temperature of water that is being tested. Additionally, this remote-control system is specially designed for lakes, reservoirs, rivers etc. where we cannot monitor water quality in such complicated scale water environments by just using a stationary system because water parameters vary at every single location. To avoid this, we manufactured a boat which can float and move on the water simply by user controller. This structure is designed as a hull shape which minimizes the resistivity of water flow and this shape also maintains the stability of water.   This water quality monitoring boat includes an embedded global positioning system GPS which gives the location of the point wherever water quality is varying and radio frequency module for wireless communication. All the results are generated and displayed with their readings and their graphical analogue meters through the graphical user interface GUI technique, along with water’s impurities limitation points and its hazardous level notification.   It is proven through various tests conducted in reservoirs, lakes and personal water storage tanks that this project is successfully capable of demonstrating these physicochemical parameters as well as displaying these readings effectively. "
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="10dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="#D5618B9E"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/place_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="place"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lake_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/place_text_id"
+            android:layout_marginTop="5dp"
+            android:text="lake "
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/phval_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/lake_text_id"
+            android:layout_marginTop="5dp"
+            android:text="PH "
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/turbidityval_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/phval_text_id"
+            android:layout_marginTop="5dp"
+            android:text="Turbidity "
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pollutionval_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/turbidityval_text_id"
+            android:layout_marginTop="5dp"
+            android:text="Pollution "
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

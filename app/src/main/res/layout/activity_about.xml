@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_Activity"
+    android:background="@drawable/author_bg_img">
+
+
+    <TextView
+        android:id="@+id/Authors_Text_View_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/aclonica"
+        android:text="AUTHORS"
+        android:textColor="#101010"
+        android:textColorHint="#00A31212"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/the_layout1"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Authors_Text_View_id">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Atharv_CardView_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardBackgroundColor="#EB327D87"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="26dp"
+            app:cardPreventCornerOverlap="false">
+
+            <RelativeLayout
+                android:id="@+id/Atharv_RelativeLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="187dp">
+
+                <TextView
+                    android:id="@+id/Atharv_TextView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Atharv_ImageView_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="Atharv Metkari"
+                    android:textColor="#F8F2F2"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/Atharv_ImageView_id"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/atharv_img" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/Yukta_CardView_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            app:cardBackgroundColor="#EB327D87"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="26dp">
+
+            <RelativeLayout
+                android:id="@+id/Yukta_RelativeLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Yukta_TextView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yukta_Imageview_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="Yukta Lokwani"
+                    android:textColor="#F8F2F2"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/yukta_Imageview_id"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/yukta_img" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/the_layout2"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/the_layout1">
+
+        <androidx.cardview.widget.CardView
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/Dev_CardView_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="#EB327D87"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="26dp">
+
+            <RelativeLayout
+                android:id="@+id/Dev_RelativeLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Dev_TextView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Dev_ImageView_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="Dev Patel"
+                    android:textColor="#F8F2F2"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/Dev_ImageView_id"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/dev_img" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/Sushant_CardView_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            app:cardBackgroundColor="#EB327D87"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="26dp">
+
+            <RelativeLayout
+                android:id="@+id/Sushant_RelativeLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Sushant_TextView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Sushant_ImageView_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="Sushant Patwe"
+                    android:textColor="#F8F2F2"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/Sushant_ImageView_id"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/sushant_img" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="408dp"
+        android:layout_height="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        
+
+        <Button
+            android:id="@+id/about_back_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="BACK"
+            app:cornerRadius="26dp"
+            app:icon="@drawable/back_img"
+            app:iconPadding="8dp"
+            app:iconSize="18dp" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

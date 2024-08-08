@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Yukta_Activity">
+
+
+
+    <TextView
+        android:id="@+id/yuktatxt"
+        android:layout_width="410dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="48dp"
+        android:text="Email:- yuktalokwani9gmail.com"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="410dp"
+        android:layout_height="33dp"
+        android:text="mobile no:-7620830066"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/yuktatxt"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/yukta_pdf_id"
+        android:layout_width="410dp"
+        android:layout_height="558dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+    </com.github.barteksc.pdfviewer.PDFView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView4"
+        android:layout_width="408dp"
+        android:layout_height="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/yukta_back_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="BACK"
+            app:cornerRadius="26dp"
+            app:icon="@drawable/back_img"
+            app:iconPadding="8dp"
+            app:iconSize="18dp" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>
