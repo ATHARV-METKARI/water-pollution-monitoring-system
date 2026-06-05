@@ -1,0 +1,1 @@
+Water Pollution Analysis System – Developed a hardware-software solution using an RC boat equipped with water quality sensors to collect real-time environmental data. Built an Android application using Java, Android Studio, and Firebase to analyze, store, and display collected water pollution data for monitoring and assessment.
